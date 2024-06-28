@@ -5,6 +5,7 @@ while True:
     opcion = opcion_menu()
     if opcion == "1":
        lista = datos_archivo("compu.json")
+       print("CARGA DE ARCHIVOS CON EXITO")
        carga_datos = True
     elif opcion == "2":
         if carga_datos == True:
@@ -28,6 +29,7 @@ while True:
     elif opcion == "5":
         if carga_datos == True:
             lista_ordenada = ordenamiento(lista,"descripcion")
+            print("LISTA ORDENADA CON EXITO")
             opcion_5 = True
         else:
             print("PRIMERO ACCEDA A LA OPCION 1")
